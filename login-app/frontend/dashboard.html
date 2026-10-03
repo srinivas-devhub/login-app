@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard — AuthApp</title>
+  <meta name="description" content="Your personal AuthApp dashboard." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="card dashboard-card">
+
+    <!-- Logo / Header -->
+    <div class="logo">
+      <div class="logo-icon">🚀</div>
+      <div class="welcome-badge">Protected Page</div>
+      <h1>Dashboard</h1>
+      <p>You are successfully logged in</p>
+    </div>
+
+    <!-- Alert message box (shown on error) -->
+    <div id="alert-box" class="alert"></div>
+
+    <!-- User Info Box (populated by JavaScript) -->
+    <div class="user-info-box">
+      <div class="user-info-row">
+        <span class="info-label">Name</span>
+        <span class="info-value" id="user-name">Loading...</span>
+      </div>
+      <div class="user-info-row">
+        <span class="info-label">Email</span>
+        <span class="info-value" id="user-email">Loading...</span>
+      </div>
+      <div class="user-info-row">
+        <span class="info-label">Joined</span>
+        <span class="info-value" id="user-joined">Loading...</span>
+      </div>
+    </div>
+
+    <!-- Logout Button -->
+    <button id="logout-btn" class="btn btn-danger">
+      Sign Out
+    </button>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

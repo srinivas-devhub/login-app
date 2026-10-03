@@ -1,0 +1,10 @@
+# Dependency directories
+node_modules/
+
+# Environment variable files (NEVER commit secrets to git!)
+.env
+backend/.env
+
+# OS and editor files
+.DS_Store
+Thumbs.db
